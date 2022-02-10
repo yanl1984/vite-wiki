@@ -209,11 +209,11 @@ Call a batch of RPC APIs
 //     method: "rpcMethodName"
 //     params: [1, 1, 2]
 // }]
-myNetProcessor.batch([
-    type: 'request',
+myNetProcessor.batch([{
+    type:       'request',
     methodName: 'rpcMethodName', 
-    params: [1, 1, 2]
-]).then(() => {
+    params:     [1, 1, 2]
+}]).then(() => {
     // ...
 });
 ```
